@@ -1,1 +1,1 @@
-FROM shioju/etherpad-docker-prebuilt:latest
+FROM shioju/etherpad:latest
