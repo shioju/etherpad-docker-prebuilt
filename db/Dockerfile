@@ -1,4 +1,6 @@
 FROM shioju/mysql:latest
 
-ENTRYPOINT ["tail"]
-CMD ["-f", "/dev/null"]
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+EXPOSE 3306
+CMD ["mysqld"]
