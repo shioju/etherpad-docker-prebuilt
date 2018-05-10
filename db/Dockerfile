@@ -1,6 +1,3 @@
 FROM shioju/mysql:latest
 
-ENTRYPOINT ["docker-entrypoint.sh"]
-
-EXPOSE 3306
-CMD ["mysqld"]
+RUN chmod 770 -R /var/lib/mysql /var/log/mysql
