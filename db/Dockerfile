@@ -1,3 +1,1 @@
-FROM shioju/mysql:latest
-
-CMD ["mysqld", "--bind-address=*"]
+FROM mysql:5.7
