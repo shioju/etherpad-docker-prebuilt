@@ -1,5 +1,5 @@
 FROM shioju/etherpad:latest
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["bin/run.sh", "--root"]
+ENTRYPOINT ["tail"]
+CMD ["-f", "/dev/null"]
 
